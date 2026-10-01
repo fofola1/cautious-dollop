@@ -15,9 +15,6 @@
       },
       {
         "name": "Filip Kalvach"
-      },
-      {
-        "name": "Filip Řeháček"
       }
     ],
     "diagrams": [
@@ -50,6 +47,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -133,7 +131,6 @@
               ]
             },
             "id": "744b1854-72b3-49af-aef7-35a9ed4d5ce0",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Učitel",
@@ -167,6 +164,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -250,7 +248,6 @@
               ]
             },
             "id": "715faba8-8df3-4771-ab02-e30db1d88b72",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Žák",
@@ -284,6 +281,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -367,7 +365,6 @@
               ]
             },
             "id": "53c5e113-3797-463c-9f3d-45e9e0f18ec0",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -377,6 +374,126 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 480,
+              "y": 280
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "moodle"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5000a734-e51f-4a38-8f17-9afcd7e17019"
+                },
+                {
+                  "group": "right",
+                  "id": "78bcf7c4-055e-4ed6-94a6-a765b005c0e3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "53802321-b6a7-4954-9cf3-9dfecb84a592"
+                },
+                {
+                  "group": "left",
+                  "id": "4213665a-9d68-4165-9da9-a8a0f7185fec"
+                }
+              ]
+            },
+            "id": "8e9f7f1e-587f-4f0f-95c9-ef8f6a6ae395",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "moodle",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
               "threats": []
             }
           }
